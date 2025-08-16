@@ -45,3 +45,14 @@
         "classification_report": "              precision    recall  f1-score   support\n\n       False       0.78      0.36      0.49     61978\n        True       0.72      0.94      0.82    110872\n\n    accuracy                           0.73    172850\n   macro avg       0.75      0.65      0.65    172850\nweighted avg       0.74      0.73      0.70    172850\n"
     }
 }
+
+Data Analysis Key Findings
+
+"Adoption" and "Transfer" are the most prevalent animal outcome types, followed by "Return to Owner" and "Euthanasia".
+Animals with "Adoption," "Return to Owner," and "Transfer" outcomes tend to have a lower median age upon intake compared to those with a "Euthanasia" outcome. The age distribution for "Euthanasia" is wider and includes older outliers.
+"Domestic Shorthair" and "Pit Bull" are among the most frequent breeds admitted to the animal center.
+The logistic regression model achieved a mean cross-validation accuracy of approximately 0.639, while the tuned decision tree model had a best cross-validation accuracy of about 0.637. The Naive Bayes and KNN models had lower mean cross-validation accuracies of approximately 0.573 and 0.544, respectively.
+Insights or Next Steps
+
+Investigate the features that contribute most to the distinction between outcome types, particularly focusing on factors influencing "Euthanasia," using the tuned Logistic Regression model as a starting point due to its strong performance.
+Further explore feature engineering or alternative modeling techniques to potentially improve prediction accuracy, especially for less frequent outcome types.
